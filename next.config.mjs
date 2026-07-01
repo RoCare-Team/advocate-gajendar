@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
   reactCompiler: true,
+  // Pin the workspace root so a stray parent-directory lockfile isn't chosen.
+  turbopack: {
+    root: import.meta.dirname,
+  },
 };
 
 export default nextConfig;
