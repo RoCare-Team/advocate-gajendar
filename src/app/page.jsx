@@ -1,6 +1,6 @@
 import Hero from "@/components/home/Hero";
 import Trusted from "@/components/home/Trusted";
-import PracticeAreas from "@/components/home/PracticeAreas";
+import PracticeAreas from "@/components/home/legal-services";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import TopLawyers from "@/components/home/TopLawyers";
 import HowItWorks from "@/components/home/HowItWorks";

@@ -21,7 +21,7 @@ export default function PracticeAreas() {
           {practiceAreas.slice(0, 8).map((p, i) => (
             <Reveal key={p.slug} delay={i * 0.05}>
               <Link
-                href={`/practice-areas/${p.slug}`}
+                href={`/legal-services/${p.slug}`}
                 className="group flex h-full flex-col rounded-3xl border border-ink-100 bg-white p-7 shadow-[var(--shadow-card)] transition-all duration-300 hover:-translate-y-1.5 hover:border-gold-200 hover:shadow-[var(--shadow-soft)]"
               >
                 <span className="grid h-14 w-14 place-items-center rounded-2xl bg-ink-50 text-ink-700 transition duration-300 group-hover:-rotate-6 group-hover:scale-110 group-hover:bg-gold-400 group-hover:text-ink-950">
@@ -42,7 +42,7 @@ export default function PracticeAreas() {
         </div>
 
         <div className="mt-12 flex justify-center">
-          <Button href="/practice-areas" variant="outline" size="lg">
+          <Button href="/legal-services" variant="outline" size="lg">
             View all Legal Services <ArrowUpRight className="h-4 w-4" />
           </Button>
         </div>

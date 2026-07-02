@@ -11,7 +11,7 @@ export const metadata = {
   title: "Legal Services — Expert Lawyers for Every Legal Need",
   description:
     "Explore 15+  Legal Services — property, family, criminal, corporate, tax, GST, trademark and more. Find a verified specialist advocate for your matter.",
-  alternates: { canonical: "/practice-areas" },
+  alternates: { canonical: "/legal-services" },
 };
 
 export default function PracticeAreasPage() {
@@ -30,7 +30,7 @@ export default function PracticeAreasPage() {
             {practiceAreas.map((p, i) => (
               <Reveal key={p.slug} delay={(i % 3) * 0.05}>
                 <Link
-                  href={`/practice-areas/${p.slug}`}
+                  href={`/legal-services/${p.slug}`}
                   className="group flex h-full flex-col rounded-3xl border border-ink-100 bg-white p-7 shadow-[var(--shadow-card)] transition-all duration-300 hover:-translate-y-1.5 hover:border-gold-200 hover:shadow-[var(--shadow-soft)]"
                 >
                   <div className="flex items-center gap-4">

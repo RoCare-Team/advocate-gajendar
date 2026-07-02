@@ -117,7 +117,7 @@ export default function Navbar() {
                         {practiceAreas.map((p) => (
                           <li key={p.slug}>
                             <Link
-                              href={`/practice-areas/${p.slug}`}
+                              href={`/legal-services/${p.slug}`}
                               onClick={closeMenus}
                               className="block rounded-lg px-2 py-1.5 text-xs text-ink-500 hover:bg-ink-50"
                             >
@@ -165,7 +165,7 @@ function MegaMenu({ onNavigate }) {
             Legal Services
           </p>
           <Link
-            href="/practice-areas"
+            href="/legal-services"
             onClick={onNavigate}
             className="text-xs font-semibold text-ink-500 hover:text-gold-600"
           >
@@ -176,7 +176,7 @@ function MegaMenu({ onNavigate }) {
           {practiceAreas.slice(0, 12).map((p) => (
             <Link
               key={p.slug}
-              href={`/practice-areas/${p.slug}`}
+              href={`/legal-services/${p.slug}`}
               onClick={onNavigate}
               className="group flex items-center gap-2.5 rounded-xl p-2.5 transition hover:bg-cream"
             >

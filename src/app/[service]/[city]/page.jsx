@@ -57,8 +57,8 @@ export default async function CityServicePage({ params }) {
         title={`${svc.name} in ${loc.name}`}
         subtitle={`Connect with ${svc.description}. Confidential, verified and affordable legal help in ${loc.name}.`}
         crumbs={[
-          { label: "Legal Services", href: "/practice-areas" },
-          { label: svc.name, href: area ? `/practice-areas/${area.slug}` : undefined },
+          { label: "Legal Services", href: "/legal-services" },
+          { label: svc.name, href: area ? `/legal-services/${area.slug}` : undefined },
           { label: loc.name },
         ]}
       />

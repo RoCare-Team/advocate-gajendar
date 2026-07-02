@@ -15,7 +15,7 @@ export const SITE = {
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
-  { label: "Legal Services", href: "/practice-areas", hasMega: true },
+  { label: "Legal Services", href: "/legal-services", hasMega: true },
   { label: "Lawyers", href: "/lawyers" },
   { label: "Blogs", href: "/blogs" },
   { label: "About", href: "/about" },

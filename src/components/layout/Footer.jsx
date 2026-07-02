@@ -83,7 +83,7 @@ export default function Footer() {
           title="Legal Services"
           links={practiceAreas.slice(0, 6).map((p) => ({
             label: p.name,
-            href: `/practice-areas/${p.slug}`,
+            href: `/legal-services/${p.slug}`,
           }))}
         />
 

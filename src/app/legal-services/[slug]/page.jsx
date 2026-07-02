@@ -26,7 +26,7 @@ export async function generateMetadata({ params }) {
   return {
     title: `${area.name} — Consult a Verified ${area.name} Online`,
     description: `${area.overview.slice(0, 155)}`,
-    alternates: { canonical: `/practice-areas/${area.slug}` },
+    alternates: { canonical: `/legal-services/${area.slug}` },
   };
 }
 
@@ -45,7 +45,7 @@ export default async function PracticeAreaPage({ params }) {
         title={area.name}
         subtitle={area.short}
         crumbs={[
-          { label: "Legal Services", href: "/practice-areas" },
+          { label: "Legal Services", href: "/legal-services" },
           { label: area.name },
         ]}
       />

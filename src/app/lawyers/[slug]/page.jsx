@@ -129,7 +129,7 @@ export default async function LawyerPage({ params }) {
                 {areas.map((a) => (
                   <Link
                     key={a.slug}
-                    href={`/practice-areas/${a.slug}`}
+                    href={`/legal-services/${a.slug}`}
                     className="rounded-full bg-ink-50 px-3.5 py-1.5 text-sm font-medium text-ink-700 transition hover:bg-gold-100 hover:text-gold-700"
                   >
                     {a.name}

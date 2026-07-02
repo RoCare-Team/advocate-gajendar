@@ -13,7 +13,7 @@ export default function sitemap() {
     "/contact",
     "/consultation",
     "/lawyers",
-    "/practice-areas",
+    "/legal-services",
     "/blogs",
     "/faq",
     "/privacy-policy",
@@ -21,7 +21,7 @@ export default function sitemap() {
   ].map((path) => ({ url: `${base}${path}`, changeFrequency: "weekly", priority: path === "" ? 1 : 0.7 }));
 
   const areaRoutes = practiceAreas.map((p) => ({
-    url: `${base}/practice-areas/${p.slug}`,
+    url: `${base}/legal-services/${p.slug}`,
     changeFrequency: "monthly",
     priority: 0.8,
   }));
