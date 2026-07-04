@@ -170,6 +170,7 @@ export default function Hero() {
             </div>
           </motion.div>
         </div>
+        
 
         {/* Stat strip */}
         <motion.div
