@@ -14,6 +14,7 @@ export default function sitemap() {
     "/consultation",
     "/lawyers",
     "/legal-services",
+    "/cities",
     "/blogs",
     "/faq",
     "/privacy-policy",
