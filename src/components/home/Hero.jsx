@@ -132,7 +132,7 @@ export default function Hero() {
           >
             <div className="frame-gold relative aspect-[4/5] overflow-hidden rounded-[2rem]">
               <Image
-                src="/hero-lawyer.webp"
+                src="/hero-lawyer.jpeg"
                 alt="Professional advocate ready to help"
                 fill
                 priority
