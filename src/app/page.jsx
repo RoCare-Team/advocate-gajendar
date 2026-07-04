@@ -10,6 +10,10 @@ import LatestBlogs from "@/components/home/LatestBlogs";
 import FAQ from "@/components/home/FAQ";
 import CallToAction from "@/components/home/CallToAction";
 
+export const metadata = {
+  alternates: { canonical: "/" },
+};
+
 export default function Home() {
   return (
     <>

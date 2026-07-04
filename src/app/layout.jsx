@@ -49,10 +49,53 @@ export const metadata = {
   },
 };
 
+// Structured data (schema.org) so search engines understand this is a legal
+// service business — powers rich results and local search (e.g. "advocate Pataudi").
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "@id": `${SITE.url}/#legalservice`,
+  name: SITE.name,
+  description: SITE.description,
+  url: SITE.url,
+  telephone: SITE.phone,
+  email: SITE.email,
+  image: `${SITE.url}/opengraph-image`,
+  priceRange: "₹₹",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Chamber No. 424, Judicial Court Complex, Haily Mandi Road",
+    addressLocality: "Pataudi",
+    addressRegion: "Haryana",
+    postalCode: "122503",
+    addressCountry: "IN",
+  },
+  areaServed: { "@type": "Country", name: "India" },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ],
+      opens: "09:00",
+      closes: "20:00",
+    },
+  ],
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <body className={`${poppins.variable} ${playfair.variable} font-sans`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <ScrollProgress />
         <Navbar />
         <main className="min-h-screen">{children}</main>
