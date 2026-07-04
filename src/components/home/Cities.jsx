@@ -27,20 +27,20 @@ export default function Cities({ showAll = false }) {
             <Reveal key={city.slug} delay={i * 0.03}>
               <Link
                 href={`/${primary.slug}/${city.slug}`}
-                className="group flex items-center justify-between rounded-2xl border border-ink-100 bg-cream px-5 py-4 transition hover:-translate-y-1 hover:border-gold-200 hover:bg-white hover:shadow-[var(--shadow-card)]"
+                className="group flex items-center justify-between gap-2 rounded-2xl border border-ink-100 bg-cream px-4 py-4 transition hover:-translate-y-1 hover:border-gold-200 hover:bg-white hover:shadow-[var(--shadow-card)] sm:px-5"
               >
-                <span className="flex items-center gap-2.5">
-                  <MapPin className="h-4 w-4 text-gold-500" />
-                  <span>
-                    <span className="block font-semibold text-ink-900">
+                <span className="flex min-w-0 items-center gap-2.5">
+                  <MapPin className="h-4 w-4 shrink-0 text-gold-500" />
+                  <span className="min-w-0">
+                    <span className="block truncate font-semibold text-ink-900">
                       {city.name}
                     </span>
-                    <span className="block text-xs text-ink-400">
+                    <span className="block truncate text-xs text-ink-400">
                       {city.state}
                     </span>
                   </span>
                 </span>
-                <ArrowUpRight className="h-4 w-4 text-ink-300 transition group-hover:text-gold-600" />
+                <ArrowUpRight className="h-4 w-4 shrink-0 text-ink-300 transition group-hover:text-gold-600" />
               </Link>
             </Reveal>
           ))}
